@@ -1,55 +1,52 @@
 @tailwind components;
 
 @layer components {
-  .header {
-    @apply flex justify-between items-center
-        max-w-screen-xl mx-auto;
+  .heading-container {
+    @apply text-center;
   }
 
-  .nav-links {
-    @apply flex flex-row;
+  .post-container {
+    @apply relative z-20 mt-1 sm:pt-3 pr-3 w-full sm:w-1/2 lg:w-1/3 max-w-sm mx-auto sm:max-w-none sm:mx-0
   }
 
-  .nav-link {
-    @apply text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
-        font-semibold tracking-wide transition duration-300
-        pb-1 border-b-2 border-transparent hover:border-purple-500 focus:text-purple-500;
+  .highlighted-text {
+    @apply text-gray-600;
   }
 
-  .primary-link {
-    @apply lg:mx-0
-      px-8 py-3 rounded bg-purple-500 text-gray-100
-      focus:bg-purple-700 focus:text-gray-200 focus:ring
-      border-b-0;
+  /* h5 */
+  .subheadings {
+    @apply font-bold text-purple-500;
   }
 
-  .logo-link {
-    @apply flex items-center font-black border-b-0 text-2xl ml-0;
+  .subheading {
+    @apply mb-4;
   }
 
-  .img {
-    @apply w-10 mr-3;
+  .section-heading {
+    @apply text-4xl sm:text-5xl font-black tracking-wide text-left;
   }
 
-  .mobile-nav-links-container {
-    @apply flex flex-1 items-center justify-between sm:hidden md:hidden xl:hidden;
+  .section-description {
+    @apply mt-4 text-sm md:text-base lg:text-lg font-medium leading-relaxed text-blue-100 max-w-xl;
   }
 
-  /* button */
-  .nav-toggle {
-    @apply lg:hidden z-20 focus:outline-none focus:text-purple-500 transition duration-300;
+  .description {
+    @apply mx-auto;
   }
 
-  .mobile-nav-links {
-    @apply lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white
-        sm:hidden md:hidden xl:hidden;
+  .posts {
+    @apply mt-12 flex flex-wrap -mr-3 relative;
   }
 
-  .nav-links {
-    @apply flex flex-col items-center;
+  .post {
+    @apply flex flex-col h-full bg-gray-200 rounded;
   }
 
-  .desktop-nav-links {
-    @apply hidden lg:flex flex-1 justify-between items-center sm:flex md:flex xl:flex;
+  .post-image {
+    @apply h-64 sm:h-80 bg-center bg-cover rounded-t;
+  }
+
+  .post-title {
+    @apply font-bold group-focus:text-purple-500 transition duration-300
   }
 }
