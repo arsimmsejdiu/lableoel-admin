@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import Image from 'next/image';
+import moon from '../images/moon.svg';
+import sun from '../images/sun.svg';
 
-function Navigation() {
+function Navigation({ setDarkTheme, darkTheme }) {
   useEffect(() => {
     const btn = document.querySelector("button.mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
@@ -12,7 +15,7 @@ function Navigation() {
   });
 
   return (
-    <div>
+    <div className="dark:bg-gray-700">
       <nav className="bg-gray-100">
         <div className="max-w-full mx-auto px-4">
           <div className="flex justify-between">
@@ -72,6 +75,13 @@ function Navigation() {
               >
                 Signup
               </a>
+              <button className="flex justify-center items-center px-3" type="button" onClick={() => setDarkTheme(!darkTheme)}>
+                {darkTheme ? (
+                  <Image src={sun} className="dark:text-gray-400" />
+                ) : (
+                  <Image src={moon} className="dark:text-gray-400" />
+                )}
+              </button>
             </div>
 
             <div className="md:hidden flex items-center">
@@ -97,10 +107,13 @@ function Navigation() {
 
         <div className="mobile-menu hidden md:hidden">
           <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-            Features
+            dashboard
           </a>
           <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-            Pricing
+            write a blog
+          </a>
+          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
+            about
           </a>
         </div>
       </nav>

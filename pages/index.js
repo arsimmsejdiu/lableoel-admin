@@ -43,7 +43,7 @@ export default function Home() {
                   href="/home"
                   className="border-b border-gray-500 border-dotted"
                 >
-                  Forgot Password ?
+                  click here to continue to home page !!!
                 </Link>
               </p>
               <p className="mt-8 text-sm text-gray-600 text-center">
