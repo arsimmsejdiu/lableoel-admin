@@ -14,7 +14,7 @@ function Navigation() {
   return (
     <div>
       <nav className="bg-gray-100">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-full mx-auto px-4">
           <div className="flex justify-between">
             <div className="flex space-x-4">
               <div>
