@@ -1,0 +1,101 @@
+@tailwind components;
+
+@layer components {
+  /* Login Page */
+  /* ------------------------------------------------------------ */
+  .container-base {
+    @apply relative;
+  }
+
+  .container {
+    @apply min-h-screen bg-purple-900 text-white font-medium flex justify-center -m-8;
+  }
+
+  .content {
+    @apply max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1;
+  }
+
+  .main-container {
+    @apply lg:w-1/2 xl:w-5/12 p-6 sm:p-12;
+  }
+
+  .main-content {
+    @apply mt-12 flex flex-col items-center;
+  }
+
+  /* heading is a h1 tag */
+  .heading {
+    @apply text-2xl xl:text-3xl font-extrabold;
+  }
+
+  .form-container {
+    @apply w-full flex-1 mt-8;
+  }
+
+  .social-buttons-container {
+    @apply flex flex-col items-center;
+  }
+
+  .img {
+    @apply flex items-center justify-center;
+  }
+
+  .divider-text-container {
+    @apply my-12 border-b text-center relative;
+  }
+
+  .divider-text {
+    @apply leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform 
+          -translate-y-1/2 absolute inset-x-0 top-1/2 -mt-2 bg-transparent hover:underline cursor-pointer;
+  }
+
+  .form {
+    @apply mx-auto max-w-xs;
+  }
+
+  .input {
+    @apply w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm 
+          focus:outline-none focus:border-gray-400 focus:bg-white mt-5 first:mt-0;
+  }
+
+  .submit-button {
+    @apply mt-5 tracking-wide font-semibold bg-purple-500 text-gray-100 w-full py-4 rounded-lg hover:bg-purple-900 transition-all 
+          duration-300 ease-in-out flex items-center justify-center focus:ring focus:outline-none;
+  }
+
+  .icon {
+    @apply w-6 h-6 -ml-2 text-gray-100;
+  }
+
+  .button-text {
+    @apply ml-3;
+  }
+
+  .illustration-container {
+    @apply sm:rounded-r-lg flex-1 bg-purple-100 text-center hidden lg:flex justify-center;
+  }
+
+  .illustration-image {
+    @apply m-12 xl:m-16 w-full max-w-sm bg-contain bg-center bg-no-repeat;
+  }
+
+  .contentWithPaddingXL {
+    @apply max-w-screen-xl mx-auto py-20 lg:py-24;
+  }
+
+  .contentWithPaddingLG {
+    @apply max-w-screen-lg mx-auto py-20 lg:py-24;
+  }
+
+  .contentWithVerticalPadding {
+    @apply py-20 lg:py-24;
+  }
+
+  .content2XL {
+    @apply max-w-screen-2xl mx-auto;
+  }
+
+  /* Navigation bar */
+  /* --------------------------------------------- */
+  
+}

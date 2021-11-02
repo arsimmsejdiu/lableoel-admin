@@ -1,0 +1,55 @@
+@tailwind components;
+
+@layer components {
+  .header {
+    @apply flex justify-between items-center
+        max-w-screen-xl mx-auto;
+  }
+
+  .nav-links {
+    @apply flex flex-row;
+  }
+
+  .nav-link {
+    @apply text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+        font-semibold tracking-wide transition duration-300
+        pb-1 border-b-2 border-transparent hover:border-purple-500 focus:text-purple-500;
+  }
+
+  .primary-link {
+    @apply lg:mx-0
+      px-8 py-3 rounded bg-purple-500 text-gray-100
+      focus:bg-purple-700 focus:text-gray-200 focus:ring
+      border-b-0;
+  }
+
+  .logo-link {
+    @apply flex items-center font-black border-b-0 text-2xl ml-0;
+  }
+
+  .img {
+    @apply w-10 mr-3;
+  }
+
+  .mobile-nav-links-container {
+    @apply flex flex-1 items-center justify-between sm:hidden md:hidden xl:hidden;
+  }
+
+  /* button */
+  .nav-toggle {
+    @apply lg:hidden z-20 focus:outline-none focus:text-purple-500 transition duration-300;
+  }
+
+  .mobile-nav-links {
+    @apply lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white
+        sm:hidden md:hidden xl:hidden;
+  }
+
+  .nav-links {
+    @apply flex flex-col items-center;
+  }
+
+  .desktop-nav-links {
+    @apply hidden lg:flex flex-1 justify-between items-center sm:flex md:flex xl:flex;
+  }
+}
