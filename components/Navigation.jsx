@@ -36,7 +36,7 @@ function Navigation() {
                       d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                     />
                   </svg>
-                  <span className="font-bold">Better Dev</span>
+                  <span className="font-bold">LABLEOEL</span>
                 </a>
               </div>
 
